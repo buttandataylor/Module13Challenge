@@ -36,7 +36,7 @@ const CandidateSearch = () => {
         type="text"
         placeholder="Filter by username"
         value={filter}
-        onChange={(e) => setFilter(e.target.value)} // Update the filter state
+        onChange={(e) => setFilter(e.target.value)} 
         style={{ marginBottom: '10px' }}
       />
       <div>

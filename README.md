@@ -1,33 +1,28 @@
-# React + TypeScript + Vite
+Module 13 Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Candidate Finder Application
+This application allows users to search for GitHub profiles and manage a list of saved candidates. It interacts with the GitHub API to retrieve public profile data and provides functionality to filter, save, and manage potential candidates.
 
-Currently, two official plugins are available:
+Features
+Candidate Search: Search for GitHub users by username.
+Saved Candidates: Save and manage a list of potential candidates using local storage.
+GitHub API Integration: Retrieves data from the GitHub API to populate search results.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+How to Use
+Install dependencies:
+npm install
+Add your .env file to the environment folder.
+Start the development server:
+npm run dev
+Open your browser and navigate to http://localhost:3000.
 
-## Expanding the ESLint configuration
+File Structure
+./Develop/src/api/API.tsx: Contains the code to retrieve data from the GitHub API.
+CandidateSearch: A page where users can search for GitHub profiles.
+SavedCandidates: A page where users can view and manage their saved candidates.
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+License
+This project is licensed under the MIT License.
 
-* Configure the top-level `parserOptions` property as follows:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
